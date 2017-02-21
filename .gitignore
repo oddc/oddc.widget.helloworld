@@ -1,0 +1,6 @@
+/node_modules/
+.idea
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk

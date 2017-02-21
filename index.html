@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <!-- ## title = widget name from manifest.xml ## -->
+            <title>Hello World!</title>
+
+        <!-- oddc widget framework css -->
+            <link rel="stylesheet" href="http://odcweb1.optadata.com/widgetbuilder/2.3.1/widgetbuilder.css">
+
+        <!-- ## application styles (from manifest.xml) ## -->
+            <link rel="stylesheet" href="res/styles/animations.css">
+
+        <script type="text/javascript">
+            /* ## widget-configuration for user: ## */
+                var WIDGET_CONFIG = {};
+     
+            /* ## widget-appearance (from manifest, block: information->appearance) ## */
+                var WIDGET_APPEARANCE = {
+                    "mainColor"      : "#0a94df", /* main-color from widget-manifest */
+                    "textAppearance" : "light" /* text-appearance from widget-manifest */
+                };
+     
+            /* ## widgetbuilder-configuration: ## */
+                var CONFIG = {
+                    "PROXY_URL"   : "http://crm-test.optadata.com:8080/odone.business/service",
+                    "PORTAL_URL"  : "https://odcweb1.optadata.com/dev",
+                    "BUILDER_URL" : "https://odcweb1.optadata.com/widgetbuilder/2.3.1",
+                    "ENV"         : "DEV"
+                };
+     
+        </script>
+    </head>
+     
+    <body ng-app="oddc.widget.helloworld"><!-- ## ng-app attribute contains widget id from manifest.xml ## -->
+     
+    <!-- begin of: oddc widget framework templates, download from here: https://odcweb1.optadata.com/widgetbuilder/[BUILDER_VERSION]/templates.html -->
+        <script type=text/ng-template id=od-loader/od-loader.html><div class="odLoader centerLoader xsLoader"> <svg class="lothar" width="36px" height="36px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle> </svg> </div></script><script type=text/ng-template id=od-scrollbar/od-scrollbar.component.html><div scrollable style="height: 100%;"> <ng-transclude></ng-transclude> </div></script><script type=text/ng-template id=od-widget/od-widget.html><div class="od-widget"> <div class="panel panel-primary" ng-class="$ctrl.widgetState.getConfigValue('template')"> <div class="panel-heading" ng-style="{ 'background-color': $ctrl.widgetAppearance.mainColor, 'color': $ctrl.widgetAppearance.textColor }"> <h4 class="panel-title ellipsify"> <!-- widget back-button: --> <span class="widget-header-ico-left icon-widget-back" ng-if="$ctrl.widgetState.hasBackButton" ng-click="$ctrl.widgetState.go($ctrl.widgetState.backButtonState, $ctrl.widgetState.backButtonStateParams);"></span> <!-- widget custom user icon: --> <span ng-if="$ctrl.widgetState.getConfigValue('icon')" class="widget-header-ico-left custom-header-headline-icon"> <img ng-src="{{ $ctrl.widgetState.getConfigValue('icon') }}" /> </span> <!-- widget title: --> {{ $ctrl.widgetState.getConfigValue('title') }} </h4> <div class="widget-header-buttonbar" ng-if="$ctrl.actions"> <ul> <li ng-repeat="action in $ctrl.actions"><div class="button" ng-class="action.icon" ng-attr-title="{{action.title}}" ng-click="action.action()"></div></li> </ul> </div> </div> <div class="panel-wrapper collapse in"> <ng-transclude></ng-transclude> </div> </div> </div></script><script type=text/ng-template id=od-widget/od-widget-content/od-widget-content.html><div class="panel-body" ng-class="{options: $ctrl.widgetState.hasComponent('odWidgetFooter') }"> <div class="wg-inner"> <div class="content col-xs-12"> <div class="panel-spacing-suggestion" ng-class="[{'nospacing':nospacing}, 'widget-tabset-choose-direction-'+$ctrl.widgetTab.tabsetDirection]"> <ng-transclude></ng-transclude> </div> </div> </div> </div></script><script type=text/ng-template id=od-widget/od-widget-footer/od-widget-footer.html><div class="panel-body-options"> <div class="not-important-panel-spacing-left-and-right" ng-class="{'nospacing':nospacing}"> <ng-transclude></ng-transclude> </div> </div></script><script type=text/ng-template id=od-widget/od-widget-header/od-widget-header.html><div class="panel-heading-content" ng-style="{ 'background-color': $ctrl.widgetAppearance.mainColor, 'color' : $ctrl.widgetAppearance.textColor }"> <div class="not-important-panel-spacing-left-and-right" ng-class="{'nospacing':nospacing}"> <ng-transclude></ng-transclude> </div> <div class="header-options col-xs-12" ng-transclude="headerOptionsSlot"></div> </div></script>
+    <!-- end of: oddc widget framework templates -->
+     
+    <!-- begin of: custom widget template (from manifest.xml) -->
+        <div id="widget" od-stateclasses>
+            <ui-view></ui-view>
+        </div>
+    <!-- end of: custom widget template (from manifest.xml) -->
+     
+    <!-- oddc widget framework -->
+        <script src="http://odcweb1.optadata.com/widgetbuilder/2.3.1/widgetbuilder.js"></script>
+     
+    <!-- ## application files (from manifest.xml) ## -->
+        <script src="src/app.js"></script>
+        <script src="src/components/helloWorld.component/helloWorld.component.js"></script>
+        <script src="src/components/configuration.component/configuration.component.js"></script>
+
+    </body>
+    </html>
+

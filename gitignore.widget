@@ -1,0 +1,22 @@
+# gitinore-file example for widget repositories
+
+# fake output
+/index.html
+
+# widget file
+*.owf
+
+# local webserver
+server.js
+
+# phpstorm
+.idea
+
+#some windows stuff
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+#widget dependencies
+node_modules

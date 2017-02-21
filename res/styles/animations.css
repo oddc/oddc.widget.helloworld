@@ -1,0 +1,31 @@
+ui-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+ui-view.ng-enter,
+ui-view.ng-leave {
+    position:absolute;
+    transition:0.5s all;
+    -moz-transition:0.5s all;
+    -webkit-transition:0.5s all;
+}
+
+#widget.index ui-view.ng-enter {
+    animation:slideInLeft .5s both;
+}
+
+#widget.index ui-view.ng-leave {
+    animation:slideOutRight .5s both;
+}
+
+#widget.config ui-view.ng-enter {
+    animation:slideInRight .5s both;
+}
+
+#widget.config ui-view.ng-leave {
+    animation:slideOutLeft .5s both;
+}

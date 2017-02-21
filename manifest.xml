@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id="oddc.widget.helloworld" builder="2.3.1">
+    <information>
+        <name lang="de-DE">Hello World</name>
+        <version>0.2</version>
+        <author>
+            <company>opta data Gruppe</company>
+            <telephone>0201 / 3 19 60</telephone>
+            <fax>0201 89074499</fax>
+            <email>service@optadata-gruppe.de</email>
+            <web>http://www.optadata-gruppe.de</web>
+        </author>
+        <developer>
+            <name>Dennis Lehmann</name>
+            <email>d.lehmann@optadata-gruppe.de</email>
+        </developer>
+        <summary lang="de-DE">
+            <image>/res/images/widget.png</image>
+            <text type="textile">
+                "Hello World" example widget short description
+            </text>
+        </summary>        
+        <description lang="de-DE">
+            <image>/res/images/widget.png</image>
+            <text type="textile"> 
+                "Hello World" example widget long description
+            </text>
+        </description>
+        <tags>kostenlos,opta data</tags>
+        <link>https://github.com/oddc/oddc.widget.helloworld</link>
+        <appearance>
+            <text-appearance>light</text-appearance>
+            <main-color>#0a94df</main-color>
+        </appearance>
+    </information>
+    <ressources>
+        <templates lang="de-DE">
+            <template cols="1" rows="1" markup="/src/app.html">
+                <styles>
+                    <style>/res/styles/animations.css</style>
+                </styles>
+                <scripts>
+                    <script>/src/app.js</script>
+                    <script>/src/components/helloWorld.component/helloWorld.component.js</script>
+                    <script>/src/components/configuration.component/configuration.component.js</script>
+                </scripts>
+            </template>
+        </templates>    
+    </ressources>
+</widget>

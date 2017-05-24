@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="oddc.widget.helloworld" builder="2.3.1">
+<widget id="oddc.widget.helloworld" builder="2.3.2">
     <information>
         <name lang="de-DE">Hello World</name>
-        <version>0.2</version>
+        <version>0.3</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>

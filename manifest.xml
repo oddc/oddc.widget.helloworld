@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="oddc.widget.helloworld" builder="2.3.1">
+<widget id="oddc.widget.helloworld" builder="3.0.0">
     <information>
         <name lang="de-DE">Hello World</name>
-        <version>0.2</version>
+        <version>3.0.0</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
@@ -19,7 +19,7 @@
             <text type="textile">
                 "Hello World" example widget short description
             </text>
-        </summary>        
+        </summary>
         <description lang="de-DE">
             <image>/res/images/widget.png</image>
             <text type="textile"> 
@@ -27,11 +27,11 @@
             </text>
         </description>
         <tags>kostenlos,opta data</tags>
-        <link>https://github.com/oddc/oddc.widget.helloworld</link>
         <appearance>
             <text-appearance>light</text-appearance>
             <main-color>#0a94df</main-color>
         </appearance>
+        <link>https://github.com/oddc/oddc.widget.helloworld</link>
     </information>
     <ressources>
         <templates lang="de-DE">

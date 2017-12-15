@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="oddc.widget.helloworld" builder="3.0.0">
+<widget id="oddc.widget.helloworld" builder="3.0.0" icon="/res/images/caffeine.svg">
     <information>
         <name lang="de-DE">Hello World</name>
         <version>3.0.0</version>
@@ -21,7 +21,11 @@
             </text>
         </summary>
         <description lang="de-DE">
-            <image>/res/images/widget.png</image>
+            <media>
+                <image>/res/images/example1.jpg</image>
+                <image>/res/images/example2.jpg</image>
+                <image>/res/images/example3.jpg</image>
+            </media>
             <text type="textile"> 
                 "Hello World" example widget long description
             </text>

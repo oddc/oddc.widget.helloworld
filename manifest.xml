@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="oddc.widget.helloworld" builder="3.0.0" icon="/res/images/caffeine.svg">
+<widget id="oddc.widget.helloworld" builder="3.0.0" icon="/res/images/caffeine.png">
     <information>
         <name lang="de-DE">Hello World</name>
-        <version>3.0.4</version>
+        <version>3.1.1</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
@@ -36,6 +36,11 @@
             <main-color>#0a94df</main-color>
         </appearance>
         <link>https://github.com/oddc/oddc.widget.helloworld</link>
+        <tutorial>
+            <helptext lang="de-DE">Das ist ein Tutorial</helptext>
+            <image>https://auth.optadata-one.de/auth/XUI/themes/odOne/images/logo.svg</image>
+            <youtube-video>https://www.youtube.com/watch?v=st2vMW9N6jY</youtube-video>
+        </tutorial>
     </information>
     <ressources>
         <templates lang="de-DE">
